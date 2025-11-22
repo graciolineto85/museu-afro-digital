@@ -29,7 +29,7 @@ O conteúdo e a estrutura do museu foram baseados no artigo:
 > *The Dilemmas of Digital Patrimonialization: The Digital Museum of African and Afro-Brazilian Memory* - Livio Sansone (2013).
 
 ## 👤 Autor
-**[Seu Nome Aqui]**
+**Carlos Gracioli Neto**
 * 📧 gracioli.neto@aluno.ifsp.edu.br
 * 🏫 IFSP - Instituto Federal de São Paulo
 
