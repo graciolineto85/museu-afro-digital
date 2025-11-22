@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Museu Afro Digital: Preservação da memória, história e cultura afro-brasileira.">
+    <title>Museu Digital da Memória Afro-Brasileira</title>
+
+    <!-- Bootstrap 4.6 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Ajuste para a âncora não ficar escondida atrás do menu fixo */
+        section {
+            padding-top: 90px;
+            margin-top: -90px;
+        }
+    </style>
+</head>
+
+<!-- Scrollspy ativado no Body para iluminar o menu ao rolar -->
+
+<body data-spy="scroll" data-target="#mainNav" data-offset="100">
+
+    <header class="fixed-top">
+        <!-- Barra de Acessibilidade -->
+        <div class="accessibility-bar py-1" role="region" aria-label="Ferramentas de Acessibilidade">
+            <div class="container d-flex justify-content-between align-items-center">
+                <span class="text-small d-none d-md-block">Museu Digital da Memória Afro-Brasileira</span>
+                <div class="accessibility-controls">
+                    <span class="mr-2 text-small">Acessibilidade:</span>
+                    <button id="btn-decrease" class="btn btn-sm btn-link text-light p-0 px-1"
+                        title="Diminuir Fonte">A-</button>
+                    <button id="btn-reset" class="btn btn-sm btn-link text-light p-0 px-1"
+                        title="Tamanho Padrão">A</button>
+                    <button id="btn-increase" class="btn btn-sm btn-link text-light p-0 px-1"
+                        title="Aumentar Fonte">A+</button>
+                    <button id="btn-contrast" class="btn btn-sm btn-outline-light ml-3 rounded-pill py-0 px-2"
+                        title="Alto Contraste">
+                        <i class="fas fa-adjust"></i> <span class="d-none d-sm-inline">Contraste</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Principal -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-glass" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#home">
+                    <i class="fas fa-landmark mr-2 gold-icon" aria-hidden="true"></i>
+                    <span class="brand-text">MUSEU AFRO</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#conceito">O Projeto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#acervo">Acervo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção Home (Carrossel) -->
+    <section id="home" style="padding-top: 0; margin-top: 0;">
+        <div id="carouselMuseu" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselMuseu" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselMuseu" data-slide-to="1"></li>
+                <li data-target="#carouselMuseu" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active" style="background-image: url('img/carousel/memoria.jpg');">
+                    <div class="overlay"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4 font-serif">Memória Viva</h2>
+                        <p class="lead">Reinventando a África na diáspora através da preservação digital.</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item" style="background-image: url('img/carousel/lei.jpg');">
+                    <div class="overlay"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4 font-serif">Lei 10.639/2003</h2>
+                        <p class="lead">Um instrumento tecnológico e político para a educação étnico-racial.</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item" style="background-image: url('img/carousel/museu.jpg');">
+                    <div class="overlay"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4 font-serif">Repatriação Digital</h2>
+                        <p class="lead">Democratizando o acesso a documentos e artefatos históricos.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselMuseu" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselMuseu" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </section>
+
+    <main>
+        <!-- Seção O Projeto -->
+        <section id="conceito" class="section-padding bg-texture">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <img src="img/card/documento.jpg" alt="Manuscritos históricos"
+                            class="img-fluid rounded shadow-lg border-gold">
+                    </div>
+                    <div class="col-lg-6 pl-lg-5">
+                        <span class="text-gold font-weight-bold text-uppercase ls-2">Sobre o Projeto</span>
+                        <h2 class="mb-4 font-serif display-5 text-dark-brown">Patrimonialização Digital</h2>
+                        <p class="text-muted text-justify">
+                            O Museu Digital é uma intervenção na geopolítica do conhecimento. Buscamos reverter a lógica
+                            onde a cultura é produzida no Sul Global, mas arquivada no Norte.
+                        </p>
+                        <p class="text-muted text-justify">
+                            Através da <strong>digitalização generosa</strong>, permitimos que documentos raros retornem
+                            virtualmente às comunidades, fortalecendo a identidade e cumprindo o papel social da
+                            educação antirracista.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Acervo -->
+        <section id="acervo" class="section-padding">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="font-serif text-dark-brown">Exposições Virtuais</h2>
+                    <div class="separator mx-auto"></div>
+                    <p class="text-muted mt-3">Mergulhe em artigos e registros sobre a identidade, resistência e
+                        história afro-brasileira.</p>
+                </div>
+
+                <div class="row">
+                    <!-- Card 1 -->
+                    <div class="col-md-4 mb-4">
+                        <article class="card-custom h-100">
+                            <div class="card-image-wrapper">
+                                <img src="img/card/cultura.jpg" alt="Cultura Popular" class="img-fluid w-100">
+                                <div class="card-overlay"><span class="badge badge-gold">Patrimônio Imaterial</span>
+                                </div>
+                            </div>
+                            <div class="card-body-custom">
+                                <h3 class="h5 font-serif font-weight-bold">Cultura Popular</h3>
+                                <p class="small text-muted">Samba de roda, capoeira e manifestações identitárias.</p>
+                                <a href="cultura.html" class="link-arrow">Ver Coleção <i
+                                        class="fas fa-arrow-right ml-1"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-4 mb-4">
+                        <article class="card-custom h-100">
+                            <div class="card-image-wrapper">
+                                <img src="img/card/documento.jpg" alt="Documentos Históricos" class="img-fluid w-100">
+                                <div class="card-overlay"><span class="badge badge-gold">Acervo Histórico</span></div>
+                            </div>
+                            <div class="card-body-custom">
+                                <h3 class="h5 font-serif font-weight-bold">Arquivos da Diáspora</h3>
+                                <p class="small text-muted">Imprensa negra, cartas de alforria e registros históricos.
+                                </p>
+                                <a href="documentos.html" class="link-arrow">Ver Coleção <i
+                                        class="fas fa-arrow-right ml-1"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-4 mb-4">
+                        <article class="card-custom h-100">
+                            <div class="card-image-wrapper">
+                                <img src="img/card/religiao.jpg" alt="Religiosidade" class="img-fluid w-100">
+                                <div class="card-overlay"><span class="badge badge-gold">Sagrado</span></div>
+                            </div>
+                            <div class="card-body-custom">
+                                <h3 class="h5 font-serif font-weight-bold">Fé e Resistência</h3>
+                                <p class="small text-muted">Iconografia do Candomblé, sincretismo e saberes ancestrais.
+                                </p>
+                                <a href="religiao.html" class="link-arrow">Ver Coleção <i
+                                        class="fas fa-arrow-right ml-1"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé Atualizado -->
+    <footer class="footer-dark pt-5 pb-3" id="contato">
+        <div class="container">
+            <div class="row">
+                <!-- Coluna 1: Sobre -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="text-gold font-serif mb-3">Museu Afro Digital</h4>
+                    <p class="text-white-50 small">
+                        Projeto desenvolvido com foco na Lei 10.639/2003 e na preservação digital da memória
+                        afro-brasileira.
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Navegação Geral -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="text-light font-serif mb-3 h5">Navegação</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html#home" class="footer-link">Início</a></li>
+                        <li><a href="index.html#conceito" class="footer-link">O Projeto</a></li>
+                        <li><a href="index.html#acervo" class="footer-link">Acervo</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Exposições e Contato -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="text-light font-serif mb-3 h5">Exposições Virtuais</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="cultura.html" class="footer-link">Cultura Popular</a></li>
+                        <li><a href="religiao.html" class="footer-link">Fé e Resistência</a></li>
+                        <li><a href="documentos.html" class="footer-link">Arquivos da Diáspora</a></li>
+                    </ul>
+
+                    <h5 class="text-light font-serif mt-4 h6">Contato</h5>
+                    <p class="text-white-50 small">
+                        <i class="fas fa-envelope mr-2 text-gold"></i> gracioli.neto@aluno.ifsp.edu.br
+                    </p>
+                </div>
+            </div>
+
+            <hr class="border-secondary opacity-20">
+
+            <div class="text-center text-white-50 small">
+                &copy; 2025 Museu Digital da Memória Afro-Brasileira.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" id="back-to-top" class="back-to-top" title="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // 1. Lógica do Botão Voltar ao Topo
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+
+            $('#back-to-top').click(function () {
+                $('body,html').animate({ scrollTop: 0 }, 800);
+                return false;
+            });
+
+            // 2. Acessibilidade (Tamanho da Fonte)
+            let fontSize = 100;
+            $('#btn-increase').click(function () { if (fontSize < 150) { fontSize += 10; $('html').css('font-size', fontSize + '%'); } });
+            $('#btn-decrease').click(function () { if (fontSize > 80) { fontSize -= 10; $('html').css('font-size', fontSize + '%'); } });
+            $('#btn-reset').click(function () { fontSize = 100; $('html').css('font-size', '100%'); });
+
+            // 3. Alto Contraste (Toggle Class)
+            $('#btn-contrast').click(function () {
+                $('body').toggleClass('high-contrast-mode');
+            });
+
+            // 4. Scrollspy e Navegação Suave
+            // Inicializa o Scrollspy
+            $('body').scrollspy({ target: '#mainNav', offset: 100 });
+
+            // Rolagem suave ao clicar no menu
+            $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (event) {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top - 90
+                        }, 800);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
